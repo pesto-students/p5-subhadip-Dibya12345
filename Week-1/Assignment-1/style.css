@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+.side-navbar {
+    height:calc(100vh - 90px);
+    width:40px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:fixed;
+    z-index:1;
+}
+
+.side-navbar i{
+    padding: 12px;
+}
+/* HEADER STARTS */
+header{
+    width: 100%;
+    height: 282px;
+    background-color: rgb(69,69,69);
+    position: fixed;
+}
+.header-container{
+    padding: 23px 0px 5px 70px;
+    display: flex;
+}
+.header-image{
+    background-image: url("https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg");
+    background-size: 14em;
+    height: 100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+}
+.header-content{
+    position: relative;
+    font-size: 10px;
+    color: #f0f0f0;
+    right: 504px;
+}
+
+.header-icons{
+    position: relative;
+    right: 910px;
+    top: 213px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #f0f0f0;
+
+}
+
+/* HEADER ENDS */
+/* MAIN CONTENT STARTS */
+.bar{
+    width: 97%;
+    height: 48px;
+    border: 7px solid white;
+    background-color: #f0f0f0;
+    position: relative;
+    display: flex;
+    top: 297px;
+    left: 43px;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar button{
+    color: blue;
+    border: 1px solid black;
+    font-size: small;
+    cursor: pointer;
+    position: relative;
+    right: 190px;
+}
+.bar:nth-child(2n+1){
+    background-color: white;
+}
+.bar p{
+    font-size: 14px;
+}
+.author{
+    width: 163.45px;
+    height: 16.8px;
+    position: relative;
+    right: 140px;
+}
+.title{
+    width: 154.45px;
+    height: 16.8px;
+    position: relative;
+    left: 10px;
+}
+.time{
+    position: relative;
+    right: 169px;
+}
+/* MAIN CONTENT ENDS */
+/* FOOTER STARTS */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(67,104,155);
+}
+.footer-container{
+    padding: 15px 0px 5px 10px;
+    display: flex;
+}
+.footer-image{
+    background-image: url("https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg");
+    background-size: 4em;
+    height: 100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+}
+.footer-content{
+    position: relative;
+    font-size: 12px;
+    color: #f0f0f0;
+    right: 585px;
+    top: 7px;
+    width: 113px;
+    font-size: 10px;
+}
+.footer-icons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    width: 800px;
+    right: 20px;
+    top: 28px;
+    color: #f0f0f0;
+}
+
+/* FOOTER ENDS */
