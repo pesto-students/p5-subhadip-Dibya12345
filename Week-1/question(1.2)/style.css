@@ -31,30 +31,26 @@ header{
     padding: 23px 0px 5px 70px;
     display: flex;
 }
-.header-image{
-    background-image: url("https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg");
-    background-size: 14em;
-    height: 100vh;
-    width: 100vh;
-    background-repeat: no-repeat;
+.header-container img{
+    width: 230px;
+    height: 230px;
 }
 .header-content{
     position: relative;
     font-size: 10px;
     color: #f0f0f0;
-    right: 504px;
+    left: 74px;
 }
 
 .header-icons{
     position: relative;
-    right: 910px;
-    top: 213px;
-    width: 150px;
+    top: 205px;
+    right: 335px;
+    width: 160px;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
     color: #f0f0f0;
-
 }
 
 /* HEADER ENDS */
@@ -114,21 +110,15 @@ footer{
     padding: 15px 0px 5px 10px;
     display: flex;
 }
-.footer-image{
-    background-image: url("https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg");
-    background-size: 4em;
-    height: 100vh;
-    width: 100vh;
-    background-repeat: no-repeat;
+.footer-container img{
+    width: 66px;
+    height: 66px;
 }
 .footer-content{
-    position: relative;
-    font-size: 12px;
     color: #f0f0f0;
-    right: 585px;
-    top: 7px;
-    width: 113px;
+    width: 638px;
     font-size: 10px;
+    padding: 10px;
 }
 .footer-icons{
     position: relative;
