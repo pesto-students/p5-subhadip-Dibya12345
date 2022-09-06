@@ -6,7 +6,7 @@ function memoize(fn) {
         if (cache.has(cacheKey)) {
             return cache.get(cacheKey)
         } else {
-            let result = args.reduce((accumalator, currentValue) => fn(accumalator, currentValue));
+            let result = args.reduce(fn);
             cache.set(cacheKey, result);
             return cache.get(cacheKey);
         }
