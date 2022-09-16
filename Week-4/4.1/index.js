@@ -1,33 +1,34 @@
 // create a custom promise in javascript
 // Create a customPromise
-class CustomPromise {
+
+class customPromise {
     constructor(executor) {
-        this.executor = executor;
-        this.promise = new Promise(executor);
+        this.promiseResult = '';
+        this.promiseStatus = 'pending';
+        executor(this.resolve.bind(this), this.reject.bind(this));
     }
 
-    then(onFulfilled, onRejected) {
-        return new CustomPromise((resolve, reject) => {
-            this.promise.then((result) => {
-                if (onFulfilled) {
-                    resolve(onFulfilled(result));
-                } else {
-                    resolve(result);
-                }
-            }, (error) => {
-                if (onRejected) {
-                    resolve(onRejected(error));
-                } else {
-                    reject(error);
-                }
-            });
-        });
+    then(onFulfilled) {
+        this.onFulfilled = onFulfilled;
     }
 
     catch(onRejected) {
-        return this.then(null, onRejected);
+        this.onRejected = onRejected;
+    }
+
+    resolve(value) {
+        this.promiseResult = value;
+        this.promiseStatus = 'fulfilled';
+        this.onFulfilled(value);
+    }
+
+    reject(reason) {
+        this.promiseResult = reason;
+        this.promiseStatus = 'rejected';
+        this.onRejected(reason);
     }
 }
+
 
 // Creating a custom promise object
 var number = Math.floor(Math.random() * 100);
