@@ -1,24 +1,24 @@
 const API = "https://pokeapi.co/api/v2/pokemon/?limit=5"
 
-function doTask1(res){
+function jsonConverter(res){
 	return res.json();
 }
-async function doTask2(url) {
+async function returnResponse(url) {
 	try {
 		const fetch_url = await fetch(url);
-		const response = await doTask1(fetch_url);
+		const response = await jsonConverter(fetch_url);
 		return response;
 	} catch (err) {
 		console.log("ERROR 404: Entered the wrong url");
 	}
 }
-async function doTask3(my_response){
+async function pokemonRequest(my_response){
 	try{
-  	const response = await doTask2(my_response)
+  	const response = await returnResponse(my_response)
     console.log("success my request", response)
     return response;
   } catch(err){
     console.log("ERROR 404: You didn't catch them")
   }
 }
-doTask3(API);
+pokemonRequest(API);
