@@ -1,0 +1,10 @@
+.clipboard {
+  display: flex;
+}
+
+.clipboard textarea {
+  margin-right: 10px;
+  resize: none;
+  width: 200px;
+  height: 40px;
+}

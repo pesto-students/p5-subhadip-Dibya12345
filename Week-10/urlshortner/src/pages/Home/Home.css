@@ -1,0 +1,88 @@
+:root {
+  --offset: 6px;
+}
+.Home {
+  display: flex;
+  justify-content: center;
+}
+.home-text {
+  margin-top: 80px;
+}
+h2 {
+  font-size: 5vw;
+  font-family: Helvetica;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+}
+
+.mask {
+  position: relative;
+}
+
+.mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  padding-bottom: var(--offset);
+}
+.mask span {
+  color: orangered;
+}
+
+.home-container {
+  margin-top: 80px;
+}
+
+.home input {
+  height: 50px;
+  width: 50vw;
+  padding-left: 8px;
+}
+.home-container {
+  display: flex;
+  gap: 10px;
+}
+.home button {
+  height: 50px;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.home button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home button:active {
+  transform: scale(0.95);
+}
+
+.home button:active {
+  transform: scale(0.95);
+}
+
+.no-param,
+.output {
+  margin-top: 25px;
+}
