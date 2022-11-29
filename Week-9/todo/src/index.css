@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.toDo {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+.toDoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.toDo .addToDoDiv {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.toDo .addToDoDiv .input {
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toDo .addToDoDiv .textarea {
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+  width: 100%;
+  resize: none;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toDo .addToDoDiv .input:focus-visible,
+.toDo .addToDoDiv .textarea:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.toDo .addToDoDiv .btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.toDo ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.toDo ul li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 0.5rem;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  justify-content: space-evenly;
+}
+
+.toDo ul li .label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.toDo ul li p {
+  font-size: 13px;
+}
+
+.toDo ul li.completed {
+  text-decoration: line-through;
+}
+.title {
+  background-color: darkgray;
+  color: white;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

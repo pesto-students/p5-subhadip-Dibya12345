@@ -1,0 +1,28 @@
+.div-actions {
+  display: flex;
+  gap: 10px;
+}
+button {
+  cursor: pointer;
+  display: flex;
+  font-size: 17px;
+  padding: 10px 10px;
+  border: none;
+  background-color: darkgoldenrod;
+  color: #fff;
+  border-radius: 50%;
+}
+button.success {
+  background-color: #41d893;
+}
+
+button.warning {
+  background-color: rgb(255, 194, 0);
+}
+button.danger {
+  background-color: #d53f29;
+}
+
+button.info {
+  background-color: rgb(8, 66, 152);
+}
